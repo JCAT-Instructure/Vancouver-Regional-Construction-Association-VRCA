@@ -1,0 +1,540 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VRCA Strategic Workforce & Digital Learning Infographic</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F172A',
+              blue: '#2563EB',
+              amber: '#F59E0B',
+              teal: '#0D9488',
+              slate: '#64748B',
+              bg: '#F8FAFC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 320px;
+      max-height: 400px;
+    }
+    @media (min-width: 768px) {
+      .chart-container {
+        height: 360px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-brand-bg text-slate-800 font-sans antialiased">
+
+  <!-- Selected Color Palette: Brilliant Blues & Vibrant Amber (#0F172A, #2563EB, #F59E0B, #0D9488, #F8FAFC) -->
+  
+  <!-- Narrative & Structure Plan:
+       Section 1: Hero Banner & Core Executive Macro Metrics (KPI Callouts)
+       Section 2: Macroeconomic Labour Shortage & Trade Deficit (Chart.js Bar Chart & Analysis)
+       Section 3: Skills Retooling Breakdown & Waitlist Bottlenecks (Chart.js Donut Chart & Analysis)
+       Section 4: Canadian Construction LMS & Training Ecosystem Matrix (Chart.js Horizontal Bar Chart)
+       Section 5: VRCA Next-Gen 4-Layer Learning Architecture (Interactive HTML/CSS Flow Layout)
+       Section 6: Instructure Platform Alignment & 90-Day Implementation Timeline (Chart.js Floating Bar)
+  -->
+
+  <!-- Visualizations Plan:
+       1. Labour Deficit vs Inflow (Chart.js Vertical Bar, Goal: Compare)
+       2. Retooling Demands (Chart.js Donut, Goal: Inform/Composition)
+       3. LMS Ecosystem Capabilities (Chart.js Horizontal Bar, Goal: Compare)
+       4. 90-Day Pilot Execution Timeline (Chart.js Floating Horizontal Bar, Goal: Process/Change)
+       Confirming NO SVG used.
+  -->
+
+  <!-- Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in this output. All icons use Unicode characters or HTML/CSS styling, and all charts render via Chart.js Canvas. -->
+
+  <!-- Top Navigation Header -->
+  <header class="bg-brand-navy text-white sticky top-0 z-50 shadow-lg border-b border-blue-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center">
+      <div class="flex items-center space-x-3 mb-2 sm:mb-0">
+        <span class="text-3xl font-extrabold text-brand-amber">&#9888;</span>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight text-white">VRCA WORKFORCE STRATEGY REVIEW</h1>
+          <p class="text-xs text-blue-300">Vancouver Regional Construction Association &bull; 2026 Executive Briefing</p>
+        </div>
+      </div>
+      <nav class="flex space-x-4 text-xs font-semibold text-slate-300">
+        <a href="#macro" class="hover:text-brand-amber transition-colors">Macro Deficit</a>
+        <a href="#retooling" class="hover:text-brand-amber transition-colors">Skills Gap</a>
+        <a href="#matrix" class="hover:text-brand-amber transition-colors">LMS Matrix</a>
+        <a href="#architecture" class="hover:text-brand-amber transition-colors">4-Layer Engine</a>
+        <a href="#roadmap" class="hover:text-brand-amber transition-colors">Roadmap</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="bg-gradient-to-r from-brand-navy via-slate-900 to-blue-950 text-white py-12 px-4 sm:px-6 lg:px-8 shadow-inner">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-3xl">
+        <span class="inline-block px-3 py-1 bg-blue-600/30 border border-blue-400 text-blue-300 text-xs font-semibold rounded-full mb-3">
+          Executive Data Summary
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 text-white leading-tight">
+          Bridging British Columbia's Construction Skilled Labour Crunch
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed mb-6">
+          An interactive data visualization of regional workforce headwinds, digital upskilling requirements, competitive training models, and VRCA's strategic path toward a unified enterprise learning engine.
+        </p>
+      </div>
+
+      <!-- Quick KPI Cards Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/15">
+          <div class="text-brand-amber text-2xl font-black mb-1">1.4M+</div>
+          <div class="text-xs text-slate-300 font-medium">National Trades Inflow Target (2033)</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/15">
+          <div class="text-blue-400 text-2xl font-black mb-1">60,100</div>
+          <div class="text-xs text-slate-300 font-medium">BC Recruits Needed by 2034</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/15">
+          <div class="text-amber-400 text-2xl font-black mb-1">43,800</div>
+          <div class="text-xs text-slate-300 font-medium">BC Retirements (23% Workforce)</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/15">
+          <div class="text-teal-400 text-2xl font-black mb-1">13%</div>
+          <div class="text-xs text-slate-300 font-medium">Annual Shortage Escalation Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Body -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+    <!-- SECTION 1: Macro Deficit -->
+    <section id="macro" class="scroll-mt-20">
+      <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 border border-slate-200">
+        <div class="mb-6">
+          <span class="text-brand-blue font-bold text-xs uppercase tracking-wider">Macroeconomic Analysis</span>
+          <h3 class="text-2xl font-bold text-brand-navy mt-1">1. BC Construction Labour Supply Crisis & Retirement Cliff</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            British Columbia faces an unprecedented structural labour deficit. Over 23% of the active trades workforce (43,800 experienced workers) is slated for retirement by 2034, creating a immense loss of institutional field leadership. At the same time, regional demand requires 60,100 new workers, creating a widening supply gap that threatens infrastructure project execution.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="chart-container">
+            <canvas id="macroChart"></canvas>
+          </div>
+          <div class="space-y-4 text-sm text-slate-600">
+            <div class="p-4 bg-slate-50 rounded-lg border-l-4 border-brand-blue">
+              <h4 class="font-bold text-brand-navy text-sm">Escalating Bid & Tender Risk</h4>
+              <p class="text-xs mt-1">40%+ of regional construction employers report acute hiring difficulties. Shortages drive wage inflation, bid delays, and risk exposure across Lower Mainland projects.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-lg border-l-4 border-brand-amber">
+              <h4 class="font-bold text-brand-navy text-sm">Apprenticeship Waitlist Bottleneck</h4>
+              <p class="text-xs mt-1">Nationally, over 40,000 prospective learners remain on waiting lists for trades programs (including 20,000+ apprentices). Fixed classroom capacities exacerbate these delays.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-lg border-l-4 border-brand-teal">
+              <h4 class="font-bold text-brand-navy text-sm">Compounding Annual Shortages</h4>
+              <p class="text-xs mt-1">Sectoral shortages across commercial, residential, industrial, and civil domains are projected to compound at an average rate of 13% annually between 2026 and 2045.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills Gap & Retooling -->
+    <section id="retooling" class="scroll-mt-20">
+      <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 border border-slate-200">
+        <div class="mb-6">
+          <span class="text-brand-blue font-bold text-xs uppercase tracking-wider">Workforce Capabilities</span>
+          <h3 class="text-2xl font-bold text-brand-navy mt-1">2. Retooling Demands: Upskilling, Reskilling & Modular Training</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            As digital workflows, Building Information Modeling (BIM), VDC, and AI field productivity tools become standard on modern jobsites, existing workers require rapid retooling. Traditional multi-week classroom blocks pull productive labour off site, creating a critical need for mobile, job-embedded digital learning.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="order-2 lg:order-1 space-y-4 text-sm text-slate-600">
+            <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-bold text-blue-900 text-sm">Role Upskilling Demand</span>
+                <span class="text-blue-700 font-extrabold text-base">27%</span>
+              </div>
+              <p class="text-xs text-blue-800">Requires targeted digital software and workflow proficiencies (BIM Level 1, Lean Layout, digital QA/QC) embedded into daily jobsite routines.</p>
+            </div>
+            <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-bold text-amber-900 text-sm">Comprehensive Role Reskilling</span>
+                <span class="text-amber-700 font-extrabold text-base">17%</span>
+              </div>
+              <p class="text-xs text-amber-800">Complete career transition pathways for workers transitioning into field coordination, virtual construction, and supervisory roles.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-bold text-slate-900 text-sm">Baseline Safety & Operations</span>
+                <span class="text-slate-700 font-extrabold text-base">56%</span>
+              </div>
+              <p class="text-xs text-slate-600">Standard ongoing health, safety, Gold Seal Certification (GSC), BC Housing CPD, and compliance coursework.</p>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 chart-container">
+            <canvas id="retoolingChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: LMS Competitive Matrix -->
+    <section id="matrix" class="scroll-mt-20">
+      <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 border border-slate-200">
+        <div class="mb-6">
+          <span class="text-brand-blue font-bold text-xs uppercase tracking-wider">Competitive Intelligence</span>
+          <h3 class="text-2xl font-bold text-brand-navy mt-1">3. Construction LMS & Regional Training Ecosystem Matrix</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Peer associations and leading LMS platforms (e.g., ICBA with Global eTraining, Alberta Construction Association, Docebo, and Instructure Canvas) are modernizing construction training. The benchmark scores below evaluate how current solutions stack up across key construction-specific capabilities.
+          </p>
+        </div>
+
+        <div class="chart-container !max-w-full !h-[400px] mb-8">
+          <canvas id="matrixChart"></canvas>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+            <div class="font-bold text-brand-navy text-sm mb-1">&#128188; ICBA & Global eTraining</div>
+            <p class="text-slate-600">Integrates 100+ Autodesk/BIM courses directly into LMS with AI course authoring and multi-language support. Eliminates reliance on external redirects.</p>
+          </div>
+          <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+            <div class="font-bold text-brand-navy text-sm mb-1">&#127891; ACA Digital Tradesperson</div>
+            <p class="text-slate-600">Ties asynchronous BIM/VDC upskilling directly to employer wage subsidies ($15k–$20k) and $5k software grants to accelerate field adoption.</p>
+          </div>
+          <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+            <div class="font-bold text-brand-navy text-sm mb-1">&#128241; Modern LMS Benchmarks</div>
+            <p class="text-slate-600">Platforms like Docebo and Canvas excel with offline mobile access, automated certification tracking, and sub-account multi-tenancy for general contractors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: VRCA 4-Layer Architecture -->
+    <section id="architecture" class="scroll-mt-20">
+      <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 border border-slate-200">
+        <div class="mb-6 text-center max-w-3xl mx-auto">
+          <span class="text-brand-blue font-bold text-xs uppercase tracking-wider">Strategic Transformation</span>
+          <h3 class="text-2xl font-bold text-brand-navy mt-1">4. VRCA Next-Generation Learning Engine Architecture</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            To move away from third-party broker friction (redirects to BIS, BuildForce, etc.), VRCA can deploy a consolidated, 4-layer enterprise learning framework that retains member data and drives verified skill mastery.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          <!-- Layer 1 -->
+          <div class="bg-gradient-to-b from-slate-50 to-blue-50/40 rounded-xl p-5 border border-slate-200 shadow-sm relative flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-brand-navy text-white flex items-center justify-center font-black text-lg mb-4">1</div>
+              <h4 class="font-bold text-brand-navy text-base mb-2">Unified Infrastructure</h4>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Consolidates fragmented external portals into an association-branded single sign-on (SSO) learning gateway using modern LTI standards.
+              </p>
+            </div>
+            <div class="text-[11px] font-semibold text-brand-blue bg-white p-2 rounded border border-blue-100 text-center">
+              &#10003; Zero External Redirects
+            </div>
+          </div>
+
+          <!-- Layer 2 -->
+          <div class="bg-gradient-to-b from-slate-50 to-amber-50/40 rounded-xl p-5 border border-slate-200 shadow-sm relative flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-brand-amber text-slate-900 flex items-center justify-center font-black text-lg mb-4">2</div>
+              <h4 class="font-bold text-brand-navy text-base mb-2">Competency Badging</h4>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Replaces passive seat-time with verifiable digital micro-credentials (BIM Level 1, Mass Timber) aligned to BC Housing CPD & Gold Seal.
+              </p>
+            </div>
+            <div class="text-[11px] font-semibold text-amber-800 bg-white p-2 rounded border border-amber-100 text-center">
+              &#10003; Open Badge Metadata
+            </div>
+          </div>
+
+          <!-- Layer 3 -->
+          <div class="bg-gradient-to-b from-slate-50 to-teal-50/40 rounded-xl p-5 border border-slate-200 shadow-sm relative flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-brand-teal text-white flex items-center justify-center font-black text-lg mb-4">3</div>
+              <h4 class="font-bold text-brand-navy text-base mb-2">Field Mobile Delivery</h4>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Delivers 5-to-10 minute, mobile-first, offline-capable field modules accessible at morning safety huddles and site tailgates.
+              </p>
+            </div>
+            <div class="text-[11px] font-semibold text-teal-800 bg-white p-2 rounded border border-teal-100 text-center">
+              &#10003; Jobsite-Ready Access
+            </div>
+          </div>
+
+          <!-- Layer 4 -->
+          <div class="bg-gradient-to-b from-slate-50 to-indigo-50/40 rounded-xl p-5 border border-slate-200 shadow-sm relative flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-indigo-700 text-white flex items-center justify-center font-black text-lg mb-4">4</div>
+              <h4 class="font-bold text-brand-navy text-base mb-2">Enterprise Analytics</h4>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Provides general contractors with real-time sub-account audit dashboards mapping field proficiencies, compliance gaps, and team readiness.
+              </p>
+            </div>
+            <div class="text-[11px] font-semibold text-indigo-800 bg-white p-2 rounded border border-indigo-100 text-center">
+              &#10003; Macro Intelligence
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Platform Alignment & Roadmap -->
+    <section id="roadmap" class="scroll-mt-20">
+      <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 border border-slate-200">
+        <div class="mb-6">
+          <span class="text-brand-blue font-bold text-xs uppercase tracking-wider">Operational Execution</span>
+          <h3 class="text-2xl font-bold text-brand-navy mt-1">5. Instructure Alignment & 90-Day Discovery Roadmap</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            The Instructure Learning Platform (Canvas LMS, Canvas Credentials, Impact) aligns with VRCA's strategic vision. Below is the proposed 90-day pilot execution schedule to validate the platform and transition to a regional digital learning hub.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="chart-container">
+            <canvas id="roadmapChart"></canvas>
+          </div>
+          <div class="space-y-4 text-xs text-slate-600">
+            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+              <div class="font-bold text-brand-navy text-sm mb-1">Phase 1: Discovery & CRM Diagnostics (Days 1–20)</div>
+              <p>Audit existing member data synchronization, CRM/AMS integrations, and third-party course vendor content licensing structures.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+              <div class="font-bold text-brand-navy text-sm mb-1">Phase 2: Platform Architecture & Sub-Accounts (Days 21–45)</div>
+              <p>Configure Canvas sub-accounts for pilot General Contractors, establish LTI content bridges, and build initial micro-credential badge pathways.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+              <div class="font-bold text-brand-navy text-sm mb-1">Phase 3: Field Mobile Deployment (Days 46–70)</div>
+              <p>Deploy offline-capable tailgate modules to targeted jobsite crews; test mobile badge issuance and foreman engagement analytics.</p>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+              <div class="font-bold text-brand-navy text-sm mb-1">Phase 4: Review & Full Rollout Strategy (Days 71–90)</div>
+              <p>Synthesize ROI data, present executive evaluation to VRCA leadership, and establish association-wide rollout timeline.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Call to Action Summary -->
+    <section class="bg-brand-navy text-white rounded-xl shadow-xl p-8 border border-blue-900 text-center">
+      <h3 class="text-2xl font-black mb-2 text-white">Ready to Elevate BC's Construction Workforce?</h3>
+      <p class="text-slate-300 text-sm max-w-2xl mx-auto mb-6">
+        Advance VRCA's 2025–2028 Strategic Vision by scheduling a collaborative discovery session to review platform architecture, multi-tenant B2B models, and mobile field deployment.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 text-xs font-bold">
+        <div class="px-6 py-3 bg-brand-amber text-slate-950 rounded-lg shadow hover:bg-amber-400 transition-colors cursor-pointer">
+          Schedule Structured Discovery Call
+        </div>
+        <div class="px-6 py-3 bg-blue-700 text-white rounded-lg border border-blue-500 hover:bg-blue-600 transition-colors cursor-pointer">
+          Download Executive Evaluation PDF
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
+      <p>Strategic Evaluation Prepared for Vancouver Regional Construction Association (VRCA)</p>
+      <p class="text-slate-500">&copy; 2026 Instructure &bull; All Data Derived from VRCA Strategic Evaluation & Industry LMS Benchmarks</p>
+    </div>
+  </footer>
+
+  <!-- Chart.js Scripts -->
+  <script>
+    // Helper function for label wrapping (16 char limit)
+    function wrapLabel(str, maxLen = 16) {
+      if (typeof str !== 'string' || str.length <= maxLen) return str;
+      const words = str.split(' ');
+      const lines = [];
+      let currentLine = '';
+      words.forEach(word => {
+        if ((currentLine + ' ' + word).trim().length > maxLen) {
+          if (currentLine) lines.push(currentLine.trim());
+          currentLine = word;
+        } else {
+          currentLine += (currentLine ? ' ' : '') + word;
+        }
+      });
+      if (currentLine) lines.push(currentLine.trim());
+      return lines;
+    }
+
+    // Shared Tooltip Title Callback Option
+    const sharedTooltipOption = {
+      plugins: {
+        tooltip: {
+          callbacks: {
+            title: function(tooltipItems) {
+              const item = tooltipItems[0];
+              let label = item.chart.data.labels[item.dataIndex];
+              if (Array.isArray(label)) {
+                return label.join(' ');
+              } else {
+                return label;
+              }
+            }
+          }
+        }
+      }
+    };
+
+    // Chart 1: Macro Deficit
+    const macroCtx = document.getElementById('macroChart').getContext('2d');
+    const rawMacroLabels = ['BC Recruits Needed', 'BC Retirements', 'National Waitlist', 'BCCA Bring Trades'];
+    new Chart(macroCtx, {
+      type: 'bar',
+      data: {
+        labels: rawMacroLabels.map(l => wrapLabel(l)),
+        datasets: [{
+          label: 'Workers / Candidates Count',
+          data: [60100, 43800, 40000, 580],
+          backgroundColor: ['#2563EB', '#F59E0B', '#0D9488', '#64748B'],
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          ...sharedTooltipOption.plugins,
+          legend: { display: false },
+          title: { display: true, text: 'BC Construction Workforce Demand & Deficit Metrics', font: { size: 13, weight: 'bold' } }
+        },
+        scales: {
+          y: { beginAtZero: true, grid: { color: '#E2E8F0' } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+
+    // Chart 2: Retooling Demands
+    const retoolingCtx = document.getElementById('retoolingChart').getContext('2d');
+    const rawRetoolingLabels = ['Baseline Safety & Ops', 'Role Upskilling Demand', 'Role Reskilling Demand'];
+    new Chart(retoolingCtx, {
+      type: 'doughnut',
+      data: {
+        labels: rawRetoolingLabels.map(l => wrapLabel(l)),
+        datasets: [{
+          data: [56, 27, 17],
+          backgroundColor: ['#64748B', '#2563EB', '#F59E0B'],
+          borderWidth: 2,
+          borderColor: '#ffffff'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          ...sharedTooltipOption.plugins,
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Workforce Retooling Demands Breakdown (%)', font: { size: 13, weight: 'bold' } }
+        }
+      }
+    });
+
+    // Chart 3: LMS Capability Matrix
+    const matrixCtx = document.getElementById('matrixChart').getContext('2d');
+    const rawMatrixLabels = ['ICBA / Global eTrain', 'ACA Tradesperson', 'CBTU SkillPlan', 'Docebo LMS', 'Canvas Instructure'];
+    new Chart(matrixCtx, {
+      type: 'bar',
+      data: {
+        labels: rawMatrixLabels.map(l => wrapLabel(l)),
+        datasets: [
+          {
+            label: 'BIM / Software Focus',
+            data: [95, 90, 60, 75, 85],
+            backgroundColor: '#2563EB'
+          },
+          {
+            label: 'Offline Mobile Access',
+            data: [80, 65, 70, 95, 90],
+            backgroundColor: '#0D9488'
+          },
+          {
+            label: 'Verifiable Badging',
+            data: [70, 80, 75, 85, 95],
+            backgroundColor: '#F59E0B'
+          }
+        ]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          ...sharedTooltipOption.plugins,
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Construction LMS & Association Capability Scorecard (0-100)', font: { size: 13, weight: 'bold' } }
+        },
+        scales: {
+          x: { max: 100, beginAtZero: true, grid: { color: '#E2E8F0' } },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+
+    // Chart 4: Roadmap Timeline
+    const roadmapCtx = document.getElementById('roadmapChart').getContext('2d');
+    const rawRoadmapLabels = ['Phase 1: Discovery', 'Phase 2: Architecture', 'Phase 3: Field Pilot', 'Phase 4: Full Strategy'];
+    new Chart(roadmapCtx, {
+      type: 'bar',
+      data: {
+        labels: rawRoadmapLabels.map(l => wrapLabel(l)),
+        datasets: [{
+          label: 'Execution Days',
+          data: [
+            [1, 20],
+            [21, 45],
+            [46, 70],
+            [71, 90]
+          ],
+          backgroundColor: ['#2563EB', '#F59E0B', '#0D9488', '#0F172A'],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          ...sharedTooltipOption.plugins,
+          legend: { display: false },
+          title: { display: true, text: '90-Day Pilot Execution Timeline (Days)', font: { size: 13, weight: 'bold' } }
+        },
+        scales: {
+          x: { min: 0, max: 90, grid: { color: '#E2E8F0' } },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
